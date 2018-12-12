@@ -1,0 +1,19 @@
+<!DOCTYPE html> <html> <head> <style> 
+        div { width: 400px; height: 100px;background-color: red;
+           -webkit-animation-name: test/* Chrome, Safari, Opera */
+            -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+            animation-name: test; animation-duration: 4s; }
+/* Chrome, Safari, Opera */	@-webkit-keyframes test {
+            0%   {background-color: red;}
+            25%  {background-color: yellow;}
+            50%  {background-color: blue;}
+            100% {background-color: green;} }
+/* Standard syntax */		@keyframes test {
+            0%   {background-color: red;}
+            25%  {background-color: yellow;}
+            50%  {background-color: blue;}
+            100% {background-color: green;} }
+</style></head><body>
+<div> </div> 
+</body> 
+</html>
