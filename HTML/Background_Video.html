@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #bgvid {
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                min-width: 100%;
+                min-height: 100%;
+                width: auto;
+                height: auto;
+                z-index: -100;
+                transform: translateX(-50%) translateY(-50%);
+                background: url(black.jpg) no-repeat;
+                background-size: cover;
+                
+            }
+            ul{
+                width:500px;
+                height:50px;
+                background-color:rgba(255,255,255,0.7);
+                z-index:1000;
+                position:fixed;
+                top:0px;
+                left:0px;
+            }
+            li{
+                display:inline-block;
+                padding:15px;
+            }
+            li:hover{
+                color:red;
+                font-weight:200;
+            }
+            .circle{
+                width:150px;
+                height:150px;
+                border-radius:50%;
+                background-color:red;
+                position:relative;
+                z-index:1000;
+                top:-50px;
+                left:-50px;
+                transition:1s ease-in-out;
+            }
+            .circle:hover{
+                transform:translatex(300px)translatey(300px)scale(3,1)rotate(25deg);
+                opacity:0;
+            }
+          
+        </style>
+</head>
+
+<body>
+    <video autoplay muted poster="back.jpg " id="bgvid">
+        <source src="movie.webm" type="video/webm">
+        <source src="movie.mp4" type="video/mp4 ">
+    </video>
+    <ul>
+        <li>Home</li>
+        <li>Photos</li>
+        <li>About</li>
+        <li>Contact</li>
+    </ul>
+    <div class="circle"></div>
+
+
+</body>
+
+</html>

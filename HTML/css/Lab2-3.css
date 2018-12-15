@@ -1,0 +1,44 @@
+
+.everydog{
+ margin:0 auto;
+}
+
+.left-one-dog,.right-second-dog,.third-dog,.five-left-dog,.six-right-dog{
+opacity:0.3;
+}
+
+
+.left-one-dog:hover,.right-second-dog:hover,.third-dog:hover,.five-left-dog:hover,.six-right-dog:hover{
+    opacity:1;
+    }
+    
+
+#top-two-dog{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:0;
+    padding:0;  
+    height:400px;
+}
+.third-dog{
+
+height:400px;
+justify-content: center;
+display: flex;
+  
+}
+.four-dog{
+    height:400px;
+    justify-content: center; 
+    display: flex;
+}
+#bottom-two-dog{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:0;
+    padding:0;  
+    height:400px;
+}
+
