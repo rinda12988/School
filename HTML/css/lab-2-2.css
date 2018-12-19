@@ -99,9 +99,7 @@
                 .science-world img,.Castle img, .snow-mountain img,.alcohol img,.top-picture img {
                     margin:0 auto;
                     border-style:outset;
-                    -moz-box-shadow: 2px 2px 2px 2px #868686;
-                    -webkit-box-shadow: 2px 2px 2px 2px #868686;
-                    box-shadow: 2px 2px 2px 2px #868686;
+                    box-shadow: 4px 4px 20px 0px black;
                 }
                 #box-4 h2{
                     color:white;
@@ -177,7 +175,13 @@
                     text-align:center;
                     padding:18px;
                 }
+                #box-container{
                 
+                    width: fit-content;
+                    margin: 0 auto;
+                }
+                
+                 
 
 
 

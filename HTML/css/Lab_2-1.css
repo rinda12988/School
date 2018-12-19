@@ -18,6 +18,7 @@ h1{
     width:500px;
     height:650px;
     border:solid 3px gray;
+    margin:0 auto;
 }
 .inline-bottom{
     display:inline-block;
@@ -78,7 +79,7 @@ ul{
     height:232px;
     text-align:left;
 }
-.hobbies input{}
+
 
 .course{
     width:200px;
@@ -113,4 +114,6 @@ textarea{
 }
 .last-text{
     text-align:center;
+    margin-top:30px;
 }
+

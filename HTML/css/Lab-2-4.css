@@ -13,7 +13,7 @@
     
 }
 ul{
-    width: 1280px;
+    width: 100%;
     background-color:rgba(255,255,255,0.7);
     z-index:1000;
     position:fixed;
@@ -25,6 +25,7 @@ ul{
 li{
     display:inline-block;
     padding:15px;
+    margin-left:60px;
 }
 li:hover{
     color:red;
@@ -35,10 +36,10 @@ li:hover{
     height:150px;
     border-radius:50%;
     background-color:red;
-    position:relative;
+    position:fixed;
     z-index:1000;
-    top:-50px;
-    left:-50px;
+    top:-75px;
+    left:-75px;
     transition:1s ease-in-out;
 }
 .right-top-circle{
@@ -46,10 +47,10 @@ li:hover{
     height:150px;
     border-radius:50%;
     background-color:red;
-    position:relative;
+    position:fixed;
     z-index:1000;
-    top: -200px;
-    left: 1170px;
+    top: -75px;
+    right: -75px;
     transition:1s ease-in-out;
 }
 .left-bottom-circle{
@@ -57,10 +58,10 @@ li:hover{
     height:150px;
     border-radius:50%;
     background-color:red;
-    position:relative;
+    position:fixed;
     z-index:2000;
-    top: 300px;
-    left: -50px;
+    bottom:-75px;
+    left: -75px;
     transition:1s ease-in-out;
 }
 .right-bottom-circle{
@@ -68,10 +69,10 @@ li:hover{
     height:150px;
     border-radius:50%;
     background-color:red;
-    position:relative;
+    position:fixed;
     z-index:2000;
-    top: 150px;
-    left: 1180px;
+    bottom:-75px;
+    right: -75px;
     transition:1s ease-in-out;
 }
 
@@ -87,14 +88,14 @@ menu{
     margin:0 0 0 70px;
 }
 .footer-text{
-    width:1280px;
+    width:100%;
     background-color:rgba(255,255,255,0.7);
     z-index:1000;
     position:fixed;
-    top:0px;
     left:0px;
+    bottom:0px;
     margin:0; 
-    margin-top:670px;
+    
     
     
     
@@ -104,5 +105,5 @@ menu{
     
 }
 .information{
-    margin-left:80px;
+    /* margin-left:80px; */
 }
