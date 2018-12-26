@@ -48,10 +48,24 @@ background-color:rgb(160, 31, 31);
 .top{
     color:white;
     font-family:"zahra";
-    font-size: 55px;
+    font-size: 70px;
     background-color: rgba(83, 87, 230, 0.43);
 }
-.top div{
+.beautiful{
     text-align:center;
+    position:absolute;
+    top:220px;
+    left:800px;
+
+        
 }
+.ready{
+    text-align:center;
+    position:absolute;
+    top:220px;
+    left:100px;
+
+        
+}
+
 

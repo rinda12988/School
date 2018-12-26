@@ -8,7 +8,13 @@
     <title>Document</title>
     <style>
         .d1 {
-            background: LightSkyBlue;
+            /* background: LightSkyBlue; */
+            display: grid;
+            grid-template-columns: auto 1fr;
+            grid-template-rows: auto 1fr auto;
+            grid-gap:10px;
+
+
         }
 
         .d2 {
@@ -30,8 +36,10 @@
         .container {
             font-size: 40px;
             width: 100%;
-            background: LightGray;
-            display: grid;
+            /* background: LightGray; */
+            
+            
+
         }
     </style>
 
@@ -39,7 +47,10 @@
 
 <body>
     <div class="container">
-        <div class="d1">1</div>
+        <div class="d1">1
+                <div>11</div>
+
+        </div>
         <div class="d2">2</div>
         <div class="d3">3</div>
         <div class="d4">4</div>

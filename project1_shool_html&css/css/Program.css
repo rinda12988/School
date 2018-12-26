@@ -1,4 +1,109 @@
-body{
-    color:red;
+@font-face {
+    font-family:"bonita";
+    src: url(/Users/kojihayashida1/Desktop/Vs_code_School/project1_shool_html&css/font/bonita.ttf);
     
 }
+@font-face {
+
+font-family:"zahra";
+    src: url(/Users/kojihayashida1/Desktop/Vs_code_School/project1_shool_html&css/font/zahra.ttf);
+}
+
+body{
+    margin:0;
+}
+img{
+    width:1440px;
+    height:1440px;
+    
+}
+
+.menu{
+    position:fixed;
+    display:flex;
+    justify-content:flex-end;
+    top:40px;
+    left:0;
+    color:white;
+    width:100%;
+    height: 70px;
+    font-family:"bonita";
+    font-size: 55px;
+    /* background-color: rgba(83, 87, 230, 0.43); */
+    
+    
+}
+.menu img{
+    width:150px;
+    height:150px;
+    position:fixed; 
+    top:0;
+    left:100px;
+    background-size:cover;
+    
+}
+.menu div{
+    transition: all 0.7s;
+    margin: 13px 50px;
+    border-radius: 50%;
+
+}
+.menu div:hover{
+background-color:rgb(160, 31, 31);
+}
+.top{
+    color:white;
+    font-family:"zahra";
+    font-size: 50px;
+    /* background-color: rgba(83, 87, 230, 0.43); */
+
+}
+.beautiful{
+    text-align:center;
+    position:absolute;
+    top:190px;
+    left: 814px;
+
+        
+}
+.ready{
+    text-align:center;
+    position:absolute;
+    top:190px;
+    left: 230px;
+
+        
+}
+.containter{
+    border:2px solid blue;
+}
+.training-containts{
+    border:2px solid red;
+
+}
+.picture1{
+    border:2px solid pink;
+
+}
+.picture2{
+    border:2px solid rgb(223, 115, 250);
+
+}
+.picture3{
+    border:2px solid rgb(65, 21, 185);
+
+}
+.picture4{
+    border:2px solid rgb(192, 207, 255);
+
+}
+.bottom{
+    border:2px solid rgb(192, 255, 241);
+
+}
+.event{
+    border:2px solid rgb(238, 255, 192);
+
+}
+
+
