@@ -16,54 +16,56 @@ font-family:"zahra";
     font-family: "modern";
     src: url(/Users/kojihayashida1/Desktop/Vs_code_School/project1_shool_html&css/font/modern.ttf);
 }
-
-
-
-body{
-    margin:0;
+@font-face {
+    font-family: "Decorative";
+    src: url(/Users/kojihayashida1/Desktop/Vs_code_School/project1_shool_html&css/font/Decorative.ttf);
 }
+
+
+
 img{
     width:1440px;
     height:1440px;
-    
 }
+body{
+    margin:0;
+}
+
 
 
 .menu{
-    position:fixed;
-    display:flex;
-    justify-content:flex-end;
-    top:40px;
-    left:0;
-    color:white;
-    width:100%;
-    height: 70px;
-    font-family:"bonita";
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    top: 0px;
+    left: 0;
+    color: white;
+    width: 100%;
+    height: 90px;
+    font-family: "bonita";
     font-size: 55px;
+    background-color: rgba(18, 219, 233, 0.4);
     
 }
 .menu img{
-    width:150px;
-    height:150px;
-    position:fixed; 
-    top:0;
-    left:100px;
-    background-size:cover;
+    width: 122px;
+    height: 150px;
+    position: fixed;
+    top: -30px;
+    left: 26px;
     
     
 }
 .menu div{
-    margin: 13px 50px;
+    margin: 26px 50px;
+}
 
-}
-.menu div:hover{
-/* background-color:rgb(160, 31, 31); */
-}
 .top{
     color:white;
     font-family:"zahra";
-    font-size: 50px;
+    font-size: 0px;
     margin:0;
+
 
 }
 
@@ -86,7 +88,8 @@ img{
 }
 a{
     text-decoration:none;
-    color:white;
+    color: black;
+
 }
 a:hover{
   color:rgb(99, 180, 235);
@@ -98,9 +101,9 @@ a:hover{
 
 
 .School-explain{
-    border:2px dotted rgb(255, 0, 179);
-    width:1000px;
-    margin:0 auto;
+    /* border:2px dotted rgb(255, 0, 179); */
+    /* width:1000px;
+    margin:0 auto; */
 }
 .training-school{
     /* border:2px dotted blue; */
@@ -109,48 +112,142 @@ a:hover{
     padding: 60px;
 }
 
+
 .our-repertoire{
     border:2px dotted blue;
 
 }
-.bottom{
-    border:2px dotted blue;
-
+.our-repertoire h2{
+font-family:"Decorative";
+text-align: center;
 }
+
 .upcoming-performances{
-    border:2px solid blue;  
+    /* border:2px solid blue;   */
+    margin: 60px;  
+
 }
+.upcoming-performances h4{
+    text-align:center;
+    font-family:"modern";
+    font-size:40px;
+    margin:20px;
+}
+
+
 .upcoming-auditions{
-    border:2px solid blue;  
+    /* border:2px solid blue; */
+    margin: 60px;  
+
+}
+.upcoming-auditions h4{
+    text-align:center;
+    font-family:"modern";
+    font-size:40px;
+    margin:20px;
+ 
 
 }
 .our-repertoire{
     border:2px solid blue;  
+    font-size:40px;
 }
-.giselle{
+.giselle {
     border:2px solid blue;  
+    display:flex;
+    justify-content: center;
+    grid-template-columns:1fr 1fr;
 
 }
+.giselle img{
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+}
+.giselle-text{
+    border:2px solid blue; 
+    order:2;
+    width:600px;
+    height:400px;
+    text-align: center;
+}
+.giselle-text a{
+    font-size: 14px;
+    display: block;
+    background-color: rgba(255, 182, 78,0.7);
+    padding: 11px;
+    margin: 0 47px;
+}
+.giselle-button{
+    margin: 0 auto;
+    width: 500px;
+    background-color: rgba(255, 182, 78,0.7);
+}
+.giselle-text h3{
+margin:10px;
+
+}
+.giselle-picture{
+    border:2px solid blue;
+    display:flex;
+    justify-content:center;
+    order:1;
+    width: 630px;
+    padding-top: 100px;
+}
+
+
 .A-Midsummer-Night-Dream{
     border:2px solid blue;  
+    display:flex;
 }
+
+
 .les-sylphides{
     border:2px solid blue; 
+    display:flex;
 }
+
 .School-explain p{
     font-family: quicksand-light;
     font-weight: 600;
     word-spacing: 2px;
     font-size: 17px;
     color: darkslategray;
-}
-h3{
-    font-family: "modern";
-    font-size: 40px;
-    word-spacing: -10px;
+    margin: 20px 60px;
     text-align: center;
-    margin-bottom:20px;
-    color:rgb(99, 180, 235);
+}
+.training-school h3 {
+    font-family: "bonita";
+    font-size: 80px;
+    word-spacing: -2px;
+    text-align: center;
+    margin: 0 40px;
 
 }
 
+
+#bottom{
+width:auto;
+height:150px;
+border:2px solid yellowgreen;
+background-color: rgba(18, 219, 233, 1.0);
+
+}
+.top-button{
+margin:0 auto;
+}
+.head {
+    text-align: center;
+   
+    
+}
+.head a{
+    background-color:rgba(255, 182, 78,0.7);
+    padding: 15px 60px;
+    
+}
+
+h1,h3,h4,h5,h6,p{
+    text-align:center;
+}
