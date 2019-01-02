@@ -23,9 +23,10 @@ font-family:"zahra";
 
 
 
-img{
-    width:1440px;
-    height:1440px;
+.top img{
+width:100%;
+max-width: 100%;
+height: auto;
 }
 body{
     margin:0;
@@ -37,27 +38,32 @@ body{
     position: fixed;
     display: flex;
     justify-content: flex-end;
-    top: 0px;
+    top: 20px;
     left: 0;
     color: white;
-    width: 100%;
-    height: 90px;
+    width:100%;
+    max-width: 100%;
+    height: auto;
     font-family: "bonita";
     font-size: 55px;
-    background-color: rgba(18, 219, 233, 0.4);
+    /* background-color: rgba(18, 219, 233, 0.4); */
     
 }
 .menu img{
-    width: 122px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
     position: fixed;
-    top: -30px;
+    top: 0px;
     left: 26px;
     
     
 }
+
 .menu div{
     margin: 26px 50px;
+    /* width:100%; */
+    max-width: 100%;
+    height: auto;
 }
 
 .top{
@@ -88,7 +94,7 @@ body{
 }
 a{
     text-decoration:none;
-    color: black;
+    color: rgb(255, 255, 255);
 
 }
 a:hover{
@@ -113,17 +119,10 @@ a:hover{
 }
 
 
-.our-repertoire{
-    border:2px dotted blue;
 
-}
-.our-repertoire h2{
-font-family:"Decorative";
-text-align: center;
-}
+
 
 .upcoming-performances{
-    /* border:2px solid blue;   */
     margin: 60px;  
 
 }
@@ -136,7 +135,6 @@ text-align: center;
 
 
 .upcoming-auditions{
-    /* border:2px solid blue; */
     margin: 60px;  
 
 }
@@ -149,34 +147,41 @@ text-align: center;
 
 }
 .our-repertoire{
-    border:2px solid blue;  
-    font-size:40px;
+    /* border: 2px solid blue; */
+    font-size: 40px;
+    min-height: 500px;
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(600px, 0fr));
+    grid-gap: 10px;
+    justify-content: center;
 }
 .giselle {
-    border:2px solid blue;  
-    display:flex;
+    /* border:2px solid blue;   */
+    /* display:flex;
     justify-content: center;
-    grid-template-columns:1fr 1fr;
+    grid-template-columns:1fr 1fr; */
 
 }
-.giselle img{
+.giselle-picture img{
     width: 300px;
     height: 200px;
     margin: 10px;
 }
 .giselle-text{
-    border:2px solid blue; 
-    order:2;
+    /* border:2px solid blue;  */
+    padding-top: 50px;
+    /* order:2;
     width:600px;
     height:400px;
-    text-align: center;
+    text-align: center; */
 }
 .giselle-text a{
     font-size: 14px;
     display: block;
     background-color: rgba(255, 182, 78,0.7);
-    padding: 11px;
-    margin: 0 47px;
+    padding: 13px;
+    margin: 20px 5px;
 }
 .giselle-button{
     margin: 0 auto;
@@ -185,28 +190,97 @@ text-align: center;
 }
 .giselle-text h3{
 margin:10px;
+font-family:"modern";
 
 }
 .giselle-picture{
-    border:2px solid blue;
-    display:flex;
-    justify-content:center;
-    order:1;
-    width: 630px;
-    padding-top: 100px;
+    /* border:2px solid blue; */
+    /* display:flex; */
+    /* width:650px;  */
+
+   
+}
+.twoperson{
+    margin-top: 15px;
+    z-index: 50;
+    width: 300px;
+    height: 147px;
+}
+.group{
+margin-bottom:0px;
+z-index:60;
+width: 300px;
+margin-left: 250px;
+height: 200px;
+
 }
 
 
+
 .A-Midsummer-Night-Dream{
+    /* border:2px solid blue;   */
+    /* display:flex;
+    justify-content:center; */
+}
+.nightdream-text{
+    /* order:1;
+    /* width:600px;
+    height:500px; */
     border:2px solid blue;  
-    display:flex;
+    padding-top: 85px;
+
+}
+.nightdream-text h3{
+    margin:0;
+    font-family:"modern";
+
+}
+.nightdream-text a{
+    font-size: 14px;
+    display: block;
+    background-color: rgba(255, 182, 78,0.7);
+    padding: 13px;
+    margin: 0 86px;
+}   
+.nightdream-video{
+     /* order:1; */
+    width:600px;
+    height:400px;
+    border:2px solid blue;  
+    padding: 0 0 20px 40px;
+
 }
 
 
 .les-sylphides{
-    border:2px solid blue; 
-    display:flex;
+    /* border:2px solid blue;  */
+    /* display:flex;
+    justify-content:center; */
 }
+.sylphides-text{
+    /* width:600px;
+    height:500px; */
+    /* border:2px solid blue;  */
+    padding-top: 120px;
+}
+.sylphides-text h3{
+
+font-family:"modern";
+margin:0;
+}
+.sylphides-video{
+    /* border:2px solid blue;  */
+    padding: 0 0 20px 40px;
+}
+.sylphides-text a{
+    font-size: 14px;
+    display: block;
+    background-color: rgba(255, 182, 78,0.7);
+    padding: 13px;
+    margin: 0px 71px;
+}
+
+
 
 .School-explain p{
     font-family: quicksand-light;
@@ -230,9 +304,16 @@ margin:10px;
 #bottom{
 width:auto;
 height:150px;
-border:2px solid yellowgreen;
-background-color: rgba(18, 219, 233, 1.0);
+margin:0;
+/* border:2px solid yellowgreen; */
+/* background-color: rgba(18, 219, 233, 1.0); */
 
+}
+.footer img{
+    width:100%;
+    max-width: 100%;
+    max-height: 300px;
+    
 }
 .top-button{
 margin:0 auto;
@@ -250,4 +331,55 @@ margin:0 auto;
 
 h1,h3,h4,h5,h6,p{
     text-align:center;
+}
+.Our-Repertoire-text{
+    text-align: center;
+    font-size: 90px;
+    font-family:"bonita";
+
+
+}
+.one{
+    border-right:2px solid blue; 
+    padding-right:7px;
+    
+
+}
+.two{
+    border-right:2px solid blue; 
+
+}
+.three{
+    /* border:2px solid blue;  */
+    padding-top:20px;
+    padding-right: 70px;
+
+}
+.four{
+    /* margin-left:100px; */
+}
+.footer{
+    position:relative;
+    height: 300px;
+        
+    
+
+}
+
+#footer-text{
+    position:absolute;
+    top:30%;
+    left:20%;
+    color:white;
+    width:900px;
+    height:100px;
+    display:grid;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr));
+    grid-template-rows:1fr 1fr 1fr;
+    grid-gap: 30px;
+    justify-content:center;
+}
+#footer-text p{
+    color:white;
+    margin:20px 10px;
 }
