@@ -8,15 +8,30 @@
 font-family:"zahra";
     src: url(/Users/kojihayashida1/Desktop/Vs_code_School/project1_shool_html&css/font/zahra.ttf);
 }
+@font-face {
+    font-family: "quicksand-light";
+    src: url(/Users/kojihayashida1/Desktop/Vs_code_School/project1_shool_html&css/font/quicksand-light.ttf);
+}
+@font-face {
+    font-family: "modern";
+    src: url(/Users/kojihayashida1/Desktop/Vs_code_School/project1_shool_html&css/font/modern.ttf);
+}
+@font-face {
+    font-family: "Decorative";
+    src: url(/Users/kojihayashida1/Desktop/Vs_code_School/project1_shool_html&css/font/Decorative.ttf);
+}
+h1,h3,h4,h5,h6,p{
+    text-align:center;
+}
 
-body{
-    margin:0;
-}
-img{
-    width:1440px;
-    height:1440px;
-    
-}
+.top img{
+    width: 100%;
+    max-width: 100%;
+    max-height: 1200px;
+    }
+    body{
+        margin:0;
+    }
 
 .menu{
     position:fixed;
@@ -29,34 +44,32 @@ img{
     height: 70px;
     font-family:"bonita";
     font-size: 55px;
-    /* background-color: rgba(83, 87, 230, 0.43); */
-    
-    
 }
 .menu img{
-    width:150px;
-    height:150px;
-    position:fixed; 
-    top:0;
-    left:100px;
-    background-size:cover;
+    width: 130px;
+    height: 130px;
+    position: fixed;
+    top: 0px;
+    left: 26px;
+    
     
 }
-.menu div{
-    transition: all 0.7s;
-    margin: 13px 50px;
-    border-radius: 50%;
+    
 
+.menu div{
+    margin: 26px 50px;
+    /* width:100%; */
+    max-width: 100%;
+    height: auto;
 }
-.menu div:hover{
-background-color:rgb(160, 31, 31);
-}
+
+
+
 .top{
     color:white;
     font-family:"zahra";
-    font-size: 50px;
-    /* background-color: rgba(83, 87, 230, 0.43); */
-
+    font-size: 0px;
+    margin:0;
 }
 .beautiful{
     text-align:center;
@@ -74,23 +87,197 @@ background-color:rgb(160, 31, 31);
 
         
 }
-.picture{
-    border:2px solid blue;
+
+a{
+    text-decoration:none;
+    color: rgb(255, 255, 255);
 }
 
-.director-introduce{
-    border:2px solid blue;
+a:hover{
+    color:rgb(99, 180, 235);
+    transition: all 0.1s;
+    
+  }
+.container{
+    background-color: rgba(253, 226, 225,0.9);
+}
 
+
+.director-picture{
+    /* border: 2px solid blue; */
+    transform: rotate(-15deg);
+    z-index: 60;
+    height: 273px;
+    margin-top: 65px;
+}
+.director-introduce img{
+    height: 300px;
+    width: 240px;
+    margin-left: 17px;
+    box-shadow: 4px 4px 7px 0px #ae8987;
+}
+.director-text{
+    margin-top: 75px;
+    z-index: 69;
+}
+.director-text h3{
+    /* border: 2px solid blue; */
+    font-family: "modern";
+    font-size: 60px;
+    margin: 0;
+
+}
+.director-text h5{
+margin: 0;
+}
+
+
+
+.director-introduce{
+    border: 2px solid blue;
+    display: flex;
+    justify-content: center;
+    width: 1003px;
+    height: 400px;
+    margin: 0 auto;
+}
+.director-introduce p{
+    /* border:2px solid blue; */
+    width: 500px;
+    height: auto;
+    text-align:right;
+    
+}
+.introducing-teacheres{
+    /* display:flex;
+    justify-content:center; */
+}
+.introducing-teacheres h3{
+    font-family: "modern";
+    font-size: 65px;
+    margin: 40px;
+    word-spacing: -11px;
 }
 
 .other-teacer{
     border:2px solid blue;
-
+    width:1200px;
+    height:auto;
+    margin:0 auto;
+}
+.other-teacher div{
+    margin:20px;
+}
+.other-teacher h5{
+    font-size:40px;
+}
+.one-group,.two-group,.three-group,.four-group{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(100px,1fr));
+    grid-template-rows:1fr;
 }
 .guest-teachers{
     border:2px solid blue;
+    width: 1000px;
+    margin: 0px auto;
+    padding: 60px 20px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(400px,1fr));
+    grid-template-rows:1fr 1fr 1fr;
+    
 }
-.bottom{
-    border:2px solid blue;
+
+.guest-teachers p{
+    text-align:left;
+    font-style: italic;
+    padding-left: 110px;
+}
+.one{
+    border-right:2px solid blue; 
+    padding-right:7px;
+    
 
 }
+.two{
+    border-right:2px solid blue; 
+
+}
+.three{
+    padding-top:20px;
+    padding-right: 70px;
+
+}
+
+.footer{
+    position:relative;
+    height: 300px;
+        
+    
+
+}
+
+#footer-text{
+    position:absolute;
+    top:30%;
+    left:20%;
+    color:white;
+    width:900px;
+    height:100px;
+    display:grid;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr));
+    grid-template-rows:1fr 1fr 1fr 1fr;
+    grid-gap: 40px;
+    justify-content:center;
+}
+#footer-text p{
+    color:white;
+    margin:20px 10px;
+}
+#bottom{
+    width:auto;
+    height:150px;
+    margin:0;
+    /* border:2px solid yellowgreen; */
+    /* background-color: rgba(18, 219, 233, 1.0); */
+    
+    }
+    .footer img{
+        width:100%;
+        max-width: 100%;
+        max-height: 300px;
+        
+    }
+    .staff1 img,.staff2 img,.staff3 img,.staff4 img,.staff5 img,.staff6 img,.staff7 img{
+        width: 170px;
+        height: 170px;
+        margin: 20px;
+        box-shadow: 4px 4px 7px 0px black;
+        border-radius: 50%;
+
+    }
+    .staff1,.staff2,.staff3,.staff4,.staff5,.staff6,.staff7,.staff8{
+        /* border:1px solid blue; */
+        display:flex;
+        justify-content:center;
+    }
+   .guest-teachers p{
+       font-size:20px;
+       font-family: "Decorative";
+   }
+   .heading-guest-teachers h3{
+       
+       width:1000px;
+       text-align:center;
+   }
+   .staff-sentence{
+       margin:20px;
+   }
+   .staff-sentence1 h5,.staff-sentence2 h5,.staff-sentence3 h5,.staff-sentence4 h5,.staff-sentence5 h5,.staff-sentence6 h5,.staff-sentence7 h5{
+       font-size:25px;
+       text-align:left;
+
+   }
+ .staff-sentence2 h5,.staff-sentence4 h5,.staff-sentence6 h5{
+       text-align:right;
+   }
+   
