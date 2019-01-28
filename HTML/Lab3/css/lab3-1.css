@@ -11,22 +11,24 @@ font-family:"Sanchez-Italic";
 
 
 
-
+/* 
 html,body{
     margin:0;
-}
+} */
 
-
+html,body { margin:0; padding:0; }
 
 .background{
     width:100%;
-    position:relative;
+    height: 100%;
+    position: fixed;
+    background: url(../images/back.jpg) top center;
+    background-size: cover;
 }
 .background img{
-    width:100%;
+    /* width:100%;
     height:auto;
-    top:0;
-    position:relative;
+    top:0; */
    
 }
 
@@ -63,7 +65,7 @@ html,body{
         }
 
 .containts img{
-    width: 40%;
+    max-width:30%;
 }
 
 
@@ -84,10 +86,7 @@ html,body{
 
 .menu{
 
-    display:inline-block;
-    /* display:flex; */
-    /* top:0;
-    right:0; */
+    display:inline-block; 
     
 
     
@@ -99,13 +98,13 @@ html,body{
     
 }
 .title{
-    width:900px;
     text-align:center;
-    margin:0 auto;
+    margin: 0 auto;
     animation-fill-mode:forwards;
     font-size:20px;
     position: absolute;
-    top: 44%;
+
+    /* top: 44%; */
     /* left: 34%; */
     color:white;
     opacity:0.8;
@@ -117,22 +116,22 @@ html,body{
 }
 @-webkit-keyframes title{
     0% {
-        top: 35%;
-        left: 25%;
+        /* top: 35%;
+        left: 25%; */
         opacity:0.0;
         transform:scale(0,0);
     }
     30% {
-        top: 35%;
-        left: 25%;
+        /* top: 35%;
+        left: 25%; */
         opacity:0,0;
         transform:scale(0,0);
     }
 
     
     100% {
-        top: 35%;
-        left: 25%;
+        /* top: 35%;
+        left: 25%; */
         opacity:1;
         transform:scale(2,2);
     }
@@ -178,3 +177,9 @@ html,body{
         transform:scale(1,1);
     }
 }
+
+@media screen and (max-width:1019;){
+}
+@media screen and (max-width:767;){
+}
+    

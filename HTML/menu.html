@@ -12,23 +12,24 @@
         .navbar{
             overflow:hidden;
             background-color:#333;
-
+            text-align:center;
+            cursor: pointer;
         }
         .navbar a{
-            float:left;
-            font-size:16px;
+            /* float:left; */
+            font-size:30px;
             color:white;
             text-align:center;
             padding:14px 16px;
             text-decoration:none;
         }
         .subnav{
-            float:left; 
+            /* float:left;  */
             overflow:hidden;
 
         }
         .subnav .subnavbtn{
-            font-size:16px; 
+            font-size:30px; 
             border:none;
             /* I don't know the outline:none; */
             outline:none;
@@ -48,7 +49,7 @@
         .subnav-content{
             /* I don't know the display  */
             display:none;
-            position:absolute;
+            /* position:absolute; */
             left:0;
             background-color:green;
             width:100%;
@@ -56,7 +57,7 @@
 
         }
         .subnav-content a {
-  float: left;
+  /* float: left; */
   color: white;
   text-decoration: none;
 }
@@ -73,8 +74,9 @@
 </head>
 
 <body>
+    <details>
     <div class="navbar">
-        <a href="#home">Home</a>
+             <summary><a href="#home">Home</a></summary>
         <div class="subnav">
             <button class="subnavbtn">About <i class="fa fa-caret-down"></i></button>
             <div class="subnav-content">
@@ -103,10 +105,8 @@
         </div>
         <a href="#contact">Contact</a>
     </div>
-    <div style="padding:0 16px">
-        <h3>Subnav/dropdown menu inside a Navigation Bar</h3>
-        <p>Hover over the "about", "services" or "partners" link to see the sub navigation menu.</p>
-    </div>
+    
+</details>
 </body>
 
 </html>
